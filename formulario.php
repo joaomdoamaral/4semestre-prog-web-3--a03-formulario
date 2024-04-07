@@ -35,6 +35,7 @@
 
                     $primeiroNome = explode(" ", $nomeCompleto)[0];
                     $saudacao = ($sexo == 'Masculino') ? 'Olá Sr' : 'Olá Sra';
+                    $saudacao .= $primeiroNome;
 
                     if (strlen($primeiroNome) < 2) {
                         echo '<div class="alert alert-danger" role="alert">Por favor, preencha o nome completo corretamente.</div>';
